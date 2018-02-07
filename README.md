@@ -3,3 +3,7 @@
 ## Compile: <br />
 gcc -o server server.c <br />
 gcc -o client client.c <br />
+
+## Run: <br />
+./server <port>
+./client <ip> <port>
