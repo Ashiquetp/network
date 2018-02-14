@@ -36,7 +36,8 @@ int main(int argc,char *argv[]){
 		}
 		if (--nready<=0)
 			continue;
-		if(FD_ISSET(conn_fdi//,&rset)){
+		//init for loop
+		if(FD_ISSET(conn_fdi,&rset)){ //change conn_fd to conn array
 			readvar=read(conn_fd,(char *)buffer,sizeof(buffer));
 		if(readvar==0)
 			strcpy.(buffer,"woow");
